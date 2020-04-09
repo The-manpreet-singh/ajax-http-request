@@ -12,6 +12,7 @@ import './Posts.css';
         // error:false
     }
     componentDidMount () {
+        console.log(this.props);
         axios.get('/posts')
            .then( response => {
                
