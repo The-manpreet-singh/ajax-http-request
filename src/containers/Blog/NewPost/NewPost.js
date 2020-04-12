@@ -9,7 +9,7 @@ class NewPost extends Component {
         title: '',
         content: '',
         author: 'Max',
-        sumitted: false
+        submitted: false
     }
     
     componentDidMount () {
@@ -25,14 +25,16 @@ class NewPost extends Component {
         axios.post('/posts', data)
            .then(response => {
                console.log(response);
-               this.setState({sumitted :true});
+               //this.setState({submitted :true});
+               //this.props.history.replace('/posts');
+               this.props.history.push('/posts');
            })
     }
 
     render () {
         let redirect =null;
-        if(this.state.sumitted){
-            redirect = <Redirect to="/posts"/>;
+        if(this.state.submitted){
+            redirect = <Redirect to="/posts" />;
         }
         return (
             <div className="NewPost">
