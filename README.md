@@ -1,8 +1,8 @@
 # Ajax-http request
 
-### [Live Site](https://ajax-http-request.netlify.com/posts/)
+### [Live Site](https://ajax-request.netlify.com/posts/)
 
-Live URL: https://ajax-http-request.netlify.com/posts/
+Live URL: https://ajax-request.netlify.com/posts/
 
 Rest API used: https://jsonplaceholder.typicode.com/posts
 
